@@ -1,0 +1,90 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Phaser - Making your first game, part 9</title>
+	<script type="text/javascript" src="phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+var game = new Phaser.Game(796, 518, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create });
+
+function preload() {
+    game.load.image('ground', 'assets/stage/p_1.gif');
+    game.load.image('border', 'assets/stage/p_2.gif');
+    game.load.image('dune', 'assets/stage/p_3.png');
+    game.load.image('dunebg', 'assets/stage/p_4.png');
+    game.load.image('sky', 'assets/stage/p_bg.png');
+    game.load.atlasJSONHash('scorpion', 'assets/fighters/scorpion/fight_stance.png', 'assets/fighters/scorpion/fight_stance.json');
+    game.load.atlasJSONHash('cyrax', 'assets/fighters/cyrax/fight_stance.png', 'assets/fighters/cyrax/fight_stance.json');
+}
+
+function create() {
+    var sky = game.add.sprite(0, 0, 'sky');
+    sky.scale.set(2);
+
+    var duneBg = game.add.sprite(0, 175, 'dunebg');
+    duneBg.scale.set(2);
+
+    var dune = game.add.sprite(0, 214, 'dune');
+    dune.scale.set(2);
+
+    var border = game.add.sprite(0, 286, 'border');
+    border.scale.set(2);
+
+    platforms = game.add.group();
+
+    //  We will enable physics for any object that is created in this group
+    platforms.enableBody = true;
+
+    // Here we create the ground.
+    var ground = platforms.create(-177, game.world.height - 80, 'ground');
+
+    //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
+    ground.scale.setTo(2, 2);
+
+    //  This stops it from falling away when you jump on it
+    ground.body.immovable = true;
+    ground.scale.set(2);
+
+    player = game.add.sprite(200, game.world.height - 300, 'cyrax');
+    player.animations.add('fight_stance', [1, 2, 4, 5, 6, 7, 8, 9]);  
+    player.scale.set(2);
+    player.smoothed = false;
+    player.animations.play('fight_stance', 11, true);
+}
+
+function update() {
+    player.body.velocity.x = 0;
+
+    if (cursors.left.isDown)
+    {
+        //  Move to the left
+        player.body.velocity.x = -150;
+
+        //player.animations.play('left');
+    }
+    else if (cursors.right.isDown)
+    {
+        //  Move to the right
+        player.body.velocity.x = 150;
+        //player.animations.play('right_walk');
+    } else {
+        
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>

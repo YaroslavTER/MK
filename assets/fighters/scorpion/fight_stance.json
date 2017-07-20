@@ -1,0 +1,84 @@
+{"frames": {
+
+"fight_stance_01.png":
+{
+	"frame": {"x":67,"y":1,"w":63,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":129},
+	"sourceSize": {"w":63,"h":129}
+},
+"fight_stance_02.png":
+{
+	"frame": {"x":133,"y":262,"w":62,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":62,"h":129},
+	"sourceSize": {"w":62,"h":129}
+},
+"fight_stance_03.png":
+{
+	"frame": {"x":134,"y":131,"w":63,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":128},
+	"sourceSize": {"w":63,"h":128}
+},
+"fight_stance_04.png":
+{
+	"frame": {"x":132,"y":1,"w":64,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":128},
+	"sourceSize": {"w":64,"h":128}
+},
+"fight_stance_05.png":
+{
+	"frame": {"x":1,"y":263,"w":65,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":128},
+	"sourceSize": {"w":65,"h":128}
+},
+"fight_stance_06.png":
+{
+	"frame": {"x":67,"y":132,"w":65,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":65,"h":128},
+	"sourceSize": {"w":65,"h":128}
+},
+"fight_stance_07.png":
+{
+	"frame": {"x":1,"y":1,"w":64,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":129},
+	"sourceSize": {"w":64,"h":129}
+},
+"fight_stance_08.png":
+{
+	"frame": {"x":1,"y":132,"w":64,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":129},
+	"sourceSize": {"w":64,"h":129}
+},
+"fight_stance_09.png":
+{
+	"frame": {"x":68,"y":262,"w":63,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":63,"h":129},
+	"sourceSize": {"w":63,"h":129}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scorpion_fight_stance.png",
+	"format": "RGBA8888",
+	"size": {"w":198,"h":392},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:530ff8bc72657b05b886f9846699ff3c:7c27bda5652fbef0bd8e9602a8535280:acee196a58b806a29fb720ace4a27607$"
+}
+}
